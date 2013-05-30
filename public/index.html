@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  
+  <head>
+    <title>Gigawatts Troller</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://app.divshot.com/css/bootstrap.css">
+    <link rel="stylesheet" href="https://app.divshot.com/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="https://app.divshot.com/themes/google/google-bootstrap.css">
+    <link rel="stylesheet" href="https://djyhxgczejc94.cloudfront.net/builds/80037b02082b29f5f9cea127cab2a4ba4365ec67.css">
+    <script src="https://app.divshot.com/js/jquery.min.js"></script>
+    <script src="https://app.divshot.com/js/bootstrap.min.js"></script>
+    <script src="components/angular/angular.min.js"></script>
+	<script src="components/angular-resource/angular-resource.min.js"></script>
+	<script src="sockjs0.3.js"></script>
+	<script src="main.js" type="text/javascript"></script>
+  </head>
+  
+  <body ng-app="vote">
+    <div class="navbar navbar-fixed-top"></div>
+    <div ng-controller="VoteCtrl">
+	    <div class="container">
+	      <div class="hero-unit visible-desktop">
+	        <h3>1.21 Gigawatts: Chromeapps with Angular and Nodejs</h3>
+	        <p>If you hear us say one of the following words, please troll us by hitting
+	          pushing the appropriate button</p>
+	        <p></p>
+	        <div class="container">
+	          <div class="pull-left row-fluid">
+	            <div class="span3">
+	              <button class="btn btn-primary btn-large" ng-click="submit('like')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+	            </div>
+	            <div class="span3">
+	              <button class="btn btn-warning btn-large" ng-click="submit('so')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+	            </div>
+	            <div class="span3">
+	              <button class="btn btn-success btn-large" ng-click="submit('um')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Um&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+	            </div>
+	            <div class="span3">
+	              <button class="btn btn-inverse btn-large" ng-click="submit('uh')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uh&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="alert">
+	        <button type="button" class="close" data-dismiss="alert">×</button>
+	        <b>UPDATE!</b> {{message}}</div>
+	      <div ng-show="disconnected" class="alert alert-error">
+	        <button type="button" class="close" data-dismiss="alert">×</button>
+	        <b>ERROR!</b> You are not connected. You may need to refresh the page.</div>
+	    </div>
+	    <div class="hero-unit hidden-desktop">
+	      <h4>1.21 Gigawatts: Chromeapps with Angular and Nodejs</h4>
+	      <p class="text-error">If you hear us say one of the following words, please troll us by hitting
+	        pushing the appropriate button</p>
+	      <hr>
+	      <p></p>
+	      <div class="pull-right row"></div>
+	      <div class="container">
+	        <div class="container">
+	          <div class="well">
+	            <a class="btn btn-block btn-primary" ng-click="submit('like')">Like</a> 
+	          </div>
+	          <div class="well">
+	            <a class="btn btn-block btn-warning" ng-click="submit('so')">So</a> 
+	          </div>
+	          <div class="well">
+	            <a class="btn btn-block btn-success" ng-click="submit('um')">Um</a> 
+	          </div>
+	          <div class="well">
+	            <a class="btn btn-block btn-inverse" ng-click="submit('uh')">Uh</a> 
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+    </div>
+  </body>
+
+</html>
